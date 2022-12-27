@@ -1,0 +1,23 @@
+from pygame import *
+
+from time import time as timer
+window = display.set_mode((1000, 700))
+display.set_caption('Shooter')
+background = transform.scale(image.load('fon2.jpg'), (1000, 700))
+
+
+clock = time.Clock()
+
+run = True
+while run:
+
+
+    for e in event.get():
+        if e.type == QUIT:
+            run = False
+
+    window.blit(background,(0,0))
+
+         
+    display.update()
+    clock.tick(60)
