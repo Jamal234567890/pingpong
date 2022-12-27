@@ -40,6 +40,12 @@ while run:
     for e in event.get():
         if e.type == QUIT:
             run = False
+            
+    ping_ball.reset()
+    rocket1.update()
+    rocket1.reset()
+    rocket2.update()
+    rocket2.reset()
 
     window.blit(background,(0,0))
 
